@@ -1,0 +1,53 @@
+%LaTex cheat sheet template
+\documentclass[12pt,a4paper,landscape]{article}
+
+\usepackage{xfrac}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% \usepackage{polynom}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage[nodisplayskipstretch]{setspace}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{needspace}
+\usepackage{xcolor}
+
+\geometry{a4paper, left=0mm, top=0mm, right=0mm, bottom=1mm}
+
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\newcommand{\dropsign}[1]{\smash{\llap{\raisebox{-.5\normalbaselineskip}{$#1$\hspace{2\arraycolsep}}}}}
+
+\begin{document}
+\begin{multicols*}{2}
+
+    \section*{Formulaire SignProc}
+    \input{chapitre_1_intro_to_comm_sys/intro_to_comm_sys.tex}
+    \input{chapitre_2_source_coding/source_coding.tex}
+    \input{chapitre_3_info_and_signals/informations_and_signals.tex}
+    \input{chapitre_4_channel_coding/channel_coding.tex}
+    \input{chap_5_wireless_channel/wireless_channel.tex}
+\end{multicols*}
+\input{chap_6_modulation/modulation.tex}
+\begin{multicols*}{2}
+    \input{chap_7_multiple_access/multiple_access.tex}
+    \columnbreak
+    \input{chap_8_acquisition_and_synchronization/acquisition_and_synchronization.tex}
+\end{multicols*}
+
+% \subsubsection*{Subsection 2}
+% \lipsum[1-10]
+
+\end{document}
